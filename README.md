@@ -39,7 +39,7 @@ source ~/.custom_cmds.sh
 
 **source ~/.custom_cmds.sh** -- This is to use the shortcuts in the current terminal window. Alternatively you can close and reopen the terminal to use the shortcuts.
 
-Try "c" for clear. To use in the other terminal windows you have to restart them.
+Try "c" for clear, "e" to exit,..
 
 **Note:** Running this will replace the existing .custom_cmds.sh if you already have one.
 
