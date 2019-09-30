@@ -15,17 +15,17 @@ Feel free to add the shortcuts for other commands. Just make sure to not overwri
 
 The full list of aliases or shortcuts is in [.custom_cmds.sh](.custom_cmds.sh) file. Refer this when using the shortcuts.
 
-**Note:** This is just **another** way of accessing the commands. You can still use the actual long command too. 
+**Note:** This is just **another** way of accessing the commands. You can still use the actual long commands too. 
 
 ## Who can use this?
 
-If you are command line savvy and never close your terminal, this is for you! This is going to make your life super easy and fast!get the job done in half the time it used to take. A great time saver!
+If you are a **command line savvy** and never close your terminal, this is for you! This is going to make your life super easy and fast. A great time saver!
 
-If you just use the terminal to do just execute certain commands on a regular basis, this is for you too! You can just use the shortcuts for those commands and get the job done in less than half the time it used to take.
+If you just use the terminal to **execute certain commands** on a regular basis, this is for you too! You can just use the shortcuts for those commands and get the job done in less than half the time it used to take.
 
 This is not recommended for beginners. Say if you are new to git commands, it is still recommended to use the full commands to understand how it works. But still you can use the shortcuts for the other commands that you use repeatedly everyday.
 
-## How to add it to the terminal
+## How to add it to my terminal
 
 Download the repository and run the following commands.
 ```
@@ -33,15 +33,16 @@ chmod +x concatenate_and_use_shortcuts.sh
 ./concatenate_and_use_shortcuts.sh
 ```
 **chmod +x concatenate_and_use_shortcuts.sh** -- This is to give the execute permission to the script file. No need to run for subsequent execution.
+
 **./concatenate_and_use_shortcuts.sh** -- ./ will execute the concatenate_and_use_shortcuts script file.
 
 Now you can use shortcuts in the current terminal window. Try "c" for clear. To use in the other terminal windows you have to restart them.
 
 **Note:** Running this will replace the existing .custom_cmds.sh if you already have one.
 
-## How to use
+## How to know the shortcuts for the commands
 
-Check [.custom_cmds.sh](.custom_cmds.sh) and get to know the shortcuts for the commands you often. 
+Check [.custom_cmds.sh](.custom_cmds.sh) and get to know the shortcuts for the commands you use often. 
 
 "alias" is used to define shortcuts. The below line creates an alias for "cd ..". Now you can just use "b" to go back a directory.
 ```
