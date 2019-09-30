@@ -1,7 +1,7 @@
 # bash-cmd-shortcuts
 A list of simplified aliases and functions for the most commonly used bash commands.
 
-Use the command shortcuts and get the work done super fast. Think how cool it will be if you could just clear your terminal by just typing "c"(1 letter) and not "clear"(5 letters) everytime.
+Use the command shortcuts and get the work done super fast. Think how cool it will be if you could just clear your terminal by just typing "gs"(2 letters) and not "git status"(10 letters) everytime.
 
 This is the repository of shortcuts for the frequently used commands of different programs.
 It includes,
@@ -31,12 +31,15 @@ Download the repository and run the following commands.
 ```
 chmod +x concatenate_and_use_shortcuts.sh
 ./concatenate_and_use_shortcuts.sh
+source ~/.custom_cmds.sh
 ```
 **chmod +x concatenate_and_use_shortcuts.sh** -- This is to give the execute permission to the script file. No need to run for subsequent execution.
 
 **./concatenate_and_use_shortcuts.sh** -- ./ will execute the concatenate_and_use_shortcuts script file.
 
-Now you can use shortcuts in the current terminal window. Try "c" for clear. To use in the other terminal windows you have to restart them.
+**source ~/.custom_cmds.sh** -- This is to use the shortcuts in the current terminal window. Alternatively you can reopen the terminal to use the shortcuts.
+
+Try "c" for clear. To use in the other terminal windows you have to restart them.
 
 **Note:** Running this will replace the existing .custom_cmds.sh if you already have one.
 
@@ -64,13 +67,17 @@ Once you are done, **execute concatenate_and_use_shortcuts.sh** file. You can ch
 ## How to add (contribute) new command shortcuts for others to use
 
 1. **Add** a new .sh file (for a new program, say python-> create python_cmds.sh) / **Change** the *_cmds_.sh file (for already existing program, say git-> edit git_cmds.sh)
-2. Once you are done, **Execute** concatenate_and_use_shortcuts.sh using the following command 
+2. Once you are done, **Execute** concatenate_and_use_shortcuts.sh using the following command
 ```
 ./concatenate_and_use_shortcuts.sh
 ```
-3. **Test** in your terminal. Make sure all the existing and the new command shortcuts work. 
-4. If you have added shortcuts for a new program, then add it to the supported list in the README.md file.
-4. Create a pull request.
+3. Now you can either reopen the termial or execute 'source ~/.custom_cmds.sh' to use the new shortcuts.
+```
+source ~/.custom_cmds.sh
+```
+4. **Test**. Make sure all the existing and the new command shortcuts work. 
+5. If you have added shortcuts for a new program, then add it to the supported list in the README.md file.
+6. Create a pull request.
 
 Here is a [quick post](TO-DO) on the commands and the steps to follow to contribute to an open source project.
 

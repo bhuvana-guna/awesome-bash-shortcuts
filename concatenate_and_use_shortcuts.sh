@@ -7,9 +7,6 @@ for f in commands/*_cmds.sh; do (cat "${f}"; echo && echo ) >> .custom_cmds.sh; 
 # Copy .custom_cmds.sh to the home directory.
 cp .custom_cmds.sh ~
 
-# Source it in the current terminal
-source ~/.custom_cmds.sh
-
 #### To access shortcuts even after closing the current terminal, add it to .bashrc
 
 # Check if .custom_cmds.sh is already added in .bashrc
@@ -24,4 +21,4 @@ else
      echo "Shortcuts file is already in the .bashrc file."
 fi
  
-echo -e "\nYou are all set! \nYou can use the command shortcuts in this terminal window and in all the new terminal windows. \nRestart the other open terminal windows to use the new shortcuts."
+echo -e "\nYou are all set! \nEither reopen the terminal window or execute 'source ~/.custom_cmds.sh' to use the shortcuts."

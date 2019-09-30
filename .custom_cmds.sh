@@ -27,7 +27,7 @@ alias v="code $1"
 alias g="git $1"
 
 alias gs="git status"
-alias gl="git log"
+alias gll="git log"
 alias gd="git diff $1 $2"
 
 alias gi="git init $1"
@@ -47,7 +47,9 @@ alias gpo="git push origin $1"
 alias gpom="git push -u origin master"
 
 # git push default 
-function gpd() {
+## usage
+# gacp
+function gacp() {
     git add .
     git commit -a -m "$1"
     git push -u origin master

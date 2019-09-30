@@ -22,7 +22,9 @@ alias gpo="git push origin $1"
 alias gpom="git push -u origin master"
 
 # git push default 
-function gpd() {
+## usage
+# gacp
+function gacp() {
     git add .
     git commit -a -m "$1"
     git push -u origin master
