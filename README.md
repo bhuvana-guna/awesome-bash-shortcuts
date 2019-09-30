@@ -37,7 +37,7 @@ source ~/.custom_cmds.sh
 
 **./concatenate_and_use_shortcuts.sh** -- ./ will execute the concatenate_and_use_shortcuts script file.
 
-**source ~/.custom_cmds.sh** -- This is to use the shortcuts in the current terminal window. Alternatively you can reopen the terminal to use the shortcuts.
+**source ~/.custom_cmds.sh** -- This is to use the shortcuts in the current terminal window. Alternatively you can close and reopen the terminal to use the shortcuts.
 
 Try "c" for clear. To use in the other terminal windows you have to restart them.
 
@@ -71,7 +71,7 @@ Once you are done, **execute concatenate_and_use_shortcuts.sh** file. You can ch
 ```
 ./concatenate_and_use_shortcuts.sh
 ```
-3. Now you can either reopen the termial or execute 'source ~/.custom_cmds.sh' to use the new shortcuts.
+3. Now you can either close and reopen the termial or execute 'source ~/.custom_cmds.sh' to use the new shortcuts.
 ```
 source ~/.custom_cmds.sh
 ```

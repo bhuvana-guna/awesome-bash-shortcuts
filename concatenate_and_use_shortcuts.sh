@@ -21,4 +21,4 @@ else
      echo "Shortcuts file is already in the .bashrc file."
 fi
  
-echo -e "\nYou are all set! \nEither reopen the terminal window or execute 'source ~/.custom_cmds.sh' to use the shortcuts."
+echo -e "\nYou are all set! \nEither close and reopen the terminal window or execute 'source ~/.custom_cmds.sh' to use the shortcuts."
