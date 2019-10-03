@@ -21,6 +21,10 @@ alias gp="git push $1 $2"
 alias gpo="git push origin $1"
 alias gpom="git push -u origin master"
 
+# For stashing & poping the latest stash
+alias gsh="git stash"
+alias gshp="git stash pop"
+
 # git add commit push  
 ## usage
 # gacp "commit message"
