@@ -76,7 +76,7 @@ Once you are done, **execute concatenate_and_use_shortcuts.sh** file. You can ch
 5. If you have added shortcuts for a new program, then add it to the supported list in the README.md file.
 6. Create a pull request.
 
-Here is a [quick post](TO-DO) on the commands and the steps to follow to contribute to an open source project.
+Here is a [quick post](https://dev.to/bhuvanaguna/git-process-and-commands-to-know-to-contribute-to-an-open-source-project-l2f) on the commands and the steps to follow to contribute to an open source project.
 
 **Note: Don't change the existing aliases. Make sure the aliases you have added doesn't overwrite the exisitng bash commands or aliases.**
 
