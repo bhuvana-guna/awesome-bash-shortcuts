@@ -31,7 +31,7 @@ alias gl="git log"
 alias gd="git diff $1 $2"
 
 alias gi="git init $1"
-alias gr="git reset $1"
+alias gr="git reset $1" 
 
 alias gco="git checkout $1"
 alias gcb="git checkout -b $1"
@@ -40,28 +40,73 @@ alias gcl="git clone $1"
 
 alias ga="git add $1"
 alias gaa="git add ."
-alias gc="git commit -m '$1'"
 alias gcm="git commit -m 'small fixes'"
 alias gp="git push $1 $2"
 alias gpo="git push origin $1"
-alias gpom="git push -u origin master"
+alias gpom="git push origin master"
+
+alias gplom="git pull origin master"
+alias gpl="git pull $1 $2"
+
+# For stashing & poping the latest stash
+alias gsh="git stash"
+alias gshp="git stash pop"
+
+# git commit  
+## usage
+# gc "commit message"
+function gc(){
+  git commit -m "$1"
+}
 
 # git add commit push  
 ## usage
 # gacp "commit message"
 function gacp() {
-    git add .
-    git commit -a -m "$1"
-    git push -u origin master
+    echo "This will add, commit and push all the files to the master branch."
+    read -p "Do you want to proceed? y/n " -n 1 -r
+    if [[ "$REPLY" =~ ^([yY][eE][sS]|[yY])+$ ]]
+    then
+        git add .
+        git commit -m "$1"
+        git push origin master
+    else
+        echo -e "\n Quit."
+    fi
+    
 }
+
 
 # git add commit push default 
 ## usage
 # gacpd
 function gacpd() {
-    git add .
-    git commit -a -m "small fixes"
-    git push -u origin master
+    echo "This will add, commit and push all the files to the master branch with the comment 'small fixes'"
+    read -p "Do you want to proceed? y/n " -n 1 -r
+    if [[ "$REPLY" =~ ^([yY][eE][sS]|[yY])+$ ]]
+    then
+        git add .
+        git commit -m "small fixes"
+        git push origin master
+    else
+        echo -e "\n Quit."
+    fi
+}
+
+# git add commit push branch
+## usage
+# gacpd
+function gacpb() {
+    echo "This will add, commit and push all the files to the branch specified."
+    read -p "Do you want to proceed? y/n " -n 1 -r
+    if [[ "$REPLY" =~ ^([yY][eE][sS]|[yY])+$ ]]
+    then
+        git add .
+        git commit -m "$1"
+        git push origin $2
+    else
+        echo -e "\n Quit."
+    fi
 }
 
 #npm commands

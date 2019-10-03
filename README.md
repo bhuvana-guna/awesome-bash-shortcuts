@@ -37,7 +37,7 @@ source ~/.custom_cmds.sh
 
 **./concatenate_and_use_shortcuts.sh** -- ./ will execute the concatenate_and_use_shortcuts script file.
 
-**source ~/.custom_cmds.sh** -- This is to use the shortcuts in the current terminal window. Alternatively you can close and reopen the terminal to use the shortcuts.
+**source ~/.custom_cmds.sh** -- This is to use the shortcuts in the current terminal window. Alternatively you can close and open a new terminal to use the shortcuts.
 
 Try "c" for clear, "e" to exit,..
 
@@ -71,10 +71,7 @@ Once you are done, **execute concatenate_and_use_shortcuts.sh** file. You can ch
 ```
 ./concatenate_and_use_shortcuts.sh
 ```
-3. Now you can either close and reopen the termial or execute 'source ~/.custom_cmds.sh' to use the new shortcuts.
-```
-source ~/.custom_cmds.sh
-```
+3. Now you have to close and open a new terminal window to use the new and changed shortcuts.
 4. **Test**. Make sure all the existing and the new command shortcuts work. 
 5. If you have added shortcuts for a new program, then add it to the supported list in the README.md file.
 6. Create a pull request.
