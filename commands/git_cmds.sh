@@ -70,7 +70,7 @@ function gacpd() {
 
 # git add commit push branch
 ## usage
-# gacpd
+# gacpb "commit message" branch-name
 function gacpb() {
     echo "This will add, commit and push all the files to the branch specified."
     read -p "Do you want to proceed? y/n " -n 1 -r
