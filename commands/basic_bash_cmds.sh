@@ -9,8 +9,23 @@ alias md="mkdir $1"
 alias rd="rmdir $1"
 alias nn="nano $1"
 
+
+# Easier navigation: .., ..., ...., .....
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+#home
+alias h="cd ~"
+
+#common folders
+alias doc="cd ~/Documents"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+
 #change this to your project directory
-#alias proj="cd /home/user/Documents/projects/"
+alias proj="cd ~/Documents/projects"
 
 #apt
 alias a="sudo apt $1"
