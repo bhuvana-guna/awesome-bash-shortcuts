@@ -6,7 +6,11 @@ alias gl="git log"
 alias gd="git diff $1 $2"
 
 alias gi="git init $1"
-alias gr="git reset $1" 
+alias gr="git remote $1"
+alias gf="git fetch $1"
+alias gm="git merge $1"
+
+alias grs="git reset $1" 
 
 alias gco="git checkout $1"
 alias gcb="git checkout -b $1"

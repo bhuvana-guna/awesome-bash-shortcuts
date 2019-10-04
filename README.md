@@ -89,4 +89,4 @@ This file basically concatenates shortcuts from all *_cmds.file and makes them i
 3. It checks if the .custom_cmds.sh file is sourced inside .bashrc file. If not it adds "source ~/.custom_cmds.sh" line to .bashrc file.
 4. sources .custom_cmds.sh file in the current terminal.
 
-Check [this](TO-DO) blog for detailed technical details on why each step is done.
+Check [this](https://dev.to/bhuvanaguna/get-your-work-done-faster-with-bash-command-shortcuts-1eml) blog for detailed technical details on why each step is done.
