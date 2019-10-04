@@ -22,3 +22,6 @@ alias op="xdg-open ."
 
 #open vscode
 alias v="code $1"
+
+#activate virtual environment
+alias act="source $1/bin/activate"
