@@ -3,6 +3,7 @@ alias g="git $1"
 
 alias gs="git status"
 alias gl="git log"
+alias gb="git branch"
 alias gd="git diff $1 $2"
 
 alias gi="git init $1"
@@ -24,6 +25,10 @@ alias gp="git push $1 $2"
 alias gpo="git push origin $1"
 alias gpom="git push origin master"
 
+# For amend the changes to last commit
+alias gam="git commit --amend"
+
+
 alias gplom="git pull origin master"
 alias gpl="git pull $1 $2"
 
@@ -36,6 +41,13 @@ alias gshp="git stash pop"
 # gc "commit message"
 function gc(){
   git commit -m "$1"
+}
+
+# git amend with updated author
+## usage
+# gama "John Doe <john@doe.org>"
+function gama(){
+    git commit --amend --author="$1"
 }
 
 # git add commit push  
