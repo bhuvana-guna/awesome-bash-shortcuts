@@ -87,3 +87,11 @@ function gacpb() {
         echo -e "\n Quit."
     fi
 }
+
+# Making git clone less tedious
+# Instead of `git clone git@github.com:org/repo.git` do:
+# `clone org repo` or `clone username repo`
+
+clone() {
+    git clone git@github.com:$1/$2.git
+}
