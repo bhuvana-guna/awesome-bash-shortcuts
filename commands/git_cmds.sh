@@ -87,3 +87,8 @@ function gacpb() {
         echo -e "\n Quit."
     fi
 }
+
+# Find commits by commit message
+    cm = "!f() { \
+        git log --pretty=custom --decorate --date=short --grep=\"$1\"; \
+    }; f"
