@@ -9,6 +9,11 @@ alias md="mkdir $1"
 alias rd="rmdir $1"
 alias nn="nano $1"
 
+# Useful maintenance aliases
+alias reboot="sudo shutdown -r now"
+alias restart="sudo shutdown -r now"
+alias update="sudo apt-get update"
+alias upgrade="sudo apt-get upgrade"
 
 # Easier navigation: .., ..., ...., .....
 alias ..="cd .."
