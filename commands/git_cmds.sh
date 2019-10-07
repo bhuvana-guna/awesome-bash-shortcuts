@@ -87,3 +87,10 @@ function gacpb() {
         echo -e "\n Quit."
     fi
 }
+
+# Credit an author on the latest commit.
+    credit = "!f() { \
+        if [ -n \"$1\" ] && [ -n \"$2\" ]; then \
+            git commit --amend --author \"$1 <$2>\" -C HEAD; \
+        fi \
+    }; f"
