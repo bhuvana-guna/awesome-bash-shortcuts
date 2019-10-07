@@ -40,3 +40,6 @@ alias v="code $1"
 
 #activate virtual environment
 alias act="source $1/bin/activate"
+
+# Display formatted path
+alias path='printf "%b\n" "${PATH//:/\\n}"'
