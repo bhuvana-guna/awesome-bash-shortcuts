@@ -100,6 +100,11 @@ function gacpb() {
     fi
 }
 
+# Find commits by commit message
+    cm = "!f() { \
+        git log --pretty=custom --decorate --date=short --grep=\"$1\"; \
+    }; f"
+
 
 # Credit an author on the latest commit.
     credit = "!f() { \
