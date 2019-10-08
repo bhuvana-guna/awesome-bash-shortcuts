@@ -46,6 +46,17 @@ alias v="code $1"
 #activate virtual environment
 alias act="source $1/bin/activate"
 
+
+# Search history
+qh() {
+    #           ┌─ enable colors for pipe
+    #           │  ("--color=auto" enables colors only if
+    #           │  the output is in the terminal)
+    grep --color=always "$*" "$HISTFILE" |       less -RX
+    # display ANSI color escape sequences in raw form ─┘│
+    #       don't clear the screen after quitting less ─┘
+}
+
 # Display formatted path
 alias path='printf "%b\n" "${PATH//:/\\n}"'
 
