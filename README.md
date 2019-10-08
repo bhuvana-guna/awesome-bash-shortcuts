@@ -8,14 +8,15 @@ It includes,
 1. basic bash commands
 2. git commands
 3. npm commands
+4. pip commands
 
-Feel free to add the shortcuts for other commands. Just make sure to not overwrite the existing bash commands or aliases. 
+Feel free to add the shortcuts for other commands. Just make sure to not overwrite the existing bash commands or aliases.
 
 ## Full list of shortcuts
 
 The full list of aliases or shortcuts is in [.custom_cmds.sh](.custom_cmds.sh) file. Refer this when using the shortcuts.
 
-**Note:** This is just **another** way of accessing the commands. You can still use the actual long commands too. 
+**Note:** This is just **another** way of accessing the commands. You can still use the actual long commands too.
 
 ## Who can use this?
 
@@ -45,24 +46,24 @@ Try "c" for clear, "e" to exit,..
 
 ## How to know the shortcuts for the commands
 
-Check [.custom_cmds.sh](.custom_cmds.sh) and get to know the shortcuts for the commands you use often. 
+Check [.custom_cmds.sh](.custom_cmds.sh) and get to know the shortcuts for the commands you use often.
 
 "alias" is used to define shortcuts. The below line creates an alias for "cd ..". Now you can just use "b" to go back a directory.
 ```
 alias b="cd .."
 ```
 
-## How to import and use only certain shortcuts 
+## How to import and use only certain shortcuts
 
 ##### delete .sh file
-If you do not want shortcuts for certain programs delete those *_cmds.sh files from the **commands** directory. 
+If you do not want shortcuts for certain programs delete those *_cmds.sh files from the **commands** directory.
 
 ##### change .sh file
 If you want to change certain shortcuts for your own personal use, change them in *_cmds.sh file in the **commands** directory.
 
 Once you are done, **execute concatenate_and_use_shortcuts.sh** file. You can check **.custom_cmds.sh** file in your workspace for the final list of shortcuts.
 
-**Note:** This will **replace the existing shortcuts file(.custom_cmds.sh)** with the new set of shortcuts. 
+**Note:** This will **replace the existing shortcuts file(.custom_cmds.sh)** with the new set of shortcuts.
 
 ## How to add (contribute) new command shortcuts for others to use
 
@@ -72,7 +73,7 @@ Once you are done, **execute concatenate_and_use_shortcuts.sh** file. You can ch
 ./concatenate_and_use_shortcuts.sh
 ```
 3. Now you have to close and open a new terminal window to use the new and changed shortcuts.
-4. **Test**. Make sure all the existing and the new command shortcuts work. 
+4. **Test**. Make sure all the existing and the new command shortcuts work.
 5. If you have added shortcuts for a new program, then add it to the supported list in the README.md file.
 6. Create a pull request.
 

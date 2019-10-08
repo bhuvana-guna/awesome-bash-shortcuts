@@ -9,6 +9,11 @@ alias md="mkdir $1"
 alias rd="rmdir $1"
 alias nn="nano $1"
 
+# Useful maintenance aliases
+alias reboot="sudo shutdown -r now"
+alias restart="sudo shutdown -r now"
+alias update="sudo apt-get update"
+alias upgrade="sudo apt-get upgrade"
 
 # Easier navigation: .., ..., ...., .....
 alias ..="cd .."
@@ -40,3 +45,10 @@ alias v="code $1"
 
 #activate virtual environment
 alias act="source $1/bin/activate"
+
+# Search for text within the current directory
+qt() {
+    grep -ir --color=always "$*" --exclude-dir=".git" --exclude-dir="node_modules" . | less -RX
+    #     │└─ search all files under each directory, recursively
+    #     └─ ignore case
+}
