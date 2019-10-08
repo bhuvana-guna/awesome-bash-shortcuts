@@ -100,6 +100,13 @@ function gacpb() {
     fi
 }
 
+
+# Credit an author on the latest commit.
+    credit = "!f() { \
+        if [ -n \"$1\" ] && [ -n \"$2\" ]; then \
+            git commit --amend --author \"$1 <$2>\" -C HEAD; \
+        fi \
+    }; f"
 # Making git clone less tedious
 # Instead of `git clone git@github.com:org/repo.git` do:
 # `clone org repo` or `clone username repo`
@@ -107,3 +114,4 @@ function gacpb() {
 clone() {
     git clone git@github.com:$1/$2.git
 }
+
