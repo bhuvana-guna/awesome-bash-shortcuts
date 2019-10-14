@@ -1,4 +1,4 @@
-# bash-cmd-shortcuts
+# awesome-bash-shortcuts
 A list of simplified aliases and functions for the most commonly used bash commands.
 
 Use the command shortcuts and get the work done super fast. Think how cool it will be if you could display your repo's current status by just typing "gs"(2 letters) and not "git status"(10 letters) everytime.
