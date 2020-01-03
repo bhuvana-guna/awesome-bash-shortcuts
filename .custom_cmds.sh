@@ -9,8 +9,23 @@ alias md="mkdir $1"
 alias rd="rmdir $1"
 alias nn="nano $1"
 
+
+# Easier navigation: .., ..., ...., .....
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+#home
+alias h="cd ~"
+
+#common folders
+alias doc="cd ~/Documents"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+
 #change this to your project directory
-#alias proj="cd /home/user/Documents/projects/"
+alias proj="cd ~/Documents/projects"
 
 #apt
 alias a="sudo apt $1"
@@ -23,6 +38,9 @@ alias op="xdg-open ."
 #open vscode
 alias v="code $1"
 
+#activate virtual environment
+alias act="source $1/bin/activate"
+
 # git commands
 alias g="git $1"
 
@@ -31,7 +49,11 @@ alias gl="git log"
 alias gd="git diff $1 $2"
 
 alias gi="git init $1"
-alias gr="git reset $1" 
+alias gr="git remote $1"
+alias gf="git fetch $1"
+alias gm="git merge $1"
+
+alias grs="git reset $1" 
 
 alias gco="git checkout $1"
 alias gcb="git checkout -b $1"
@@ -95,7 +117,7 @@ function gacpd() {
 
 # git add commit push branch
 ## usage
-# gacpd
+# gacpb "commit message" branch-name
 function gacpb() {
     echo "This will add, commit and push all the files to the branch specified."
     read -p "Do you want to proceed? y/n " -n 1 -r
@@ -108,6 +130,7 @@ function gacpb() {
         echo -e "\n Quit."
     fi
 }
+
 
 #npm commands
 alias n="npm $1"
@@ -126,4 +149,16 @@ alias nig="npm i -g $1"
 
 #just install
 alias ni="npm i $1"
+
+#pip install
+alias p="pip install $1"
+alias ps="pip show $1"
+
+#most common pip install command
+alias pr="pip install -r requirements.txt"
+
+
+
+#to know the ip address
+alias myip="curl http://ipecho.net/plain; echo"
 
